@@ -28,8 +28,6 @@
 
 # 📖 My Portfolio <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
 This is a web page designed to showcase my future projects.
 
 ## 🛠 Built With <a name="built-with"></a>
