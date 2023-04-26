@@ -1,0 +1,119 @@
+@font-face {
+  font-family: Inter;
+  src: url("assets/fonts/Inter-Bold.ttf");
+}
+
+@font-face {
+  font-family: Inter-Light;
+  src: url("assets/fonts/Inter-Light.ttf");
+}
+
+h2 {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter';
+  font-size: 40px;
+  margin: 0;
+  padding-top: 20px;
+  font-weight: 100;
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter-Light';
+  font-size: 20px;
+  margin: 0;
+  padding-top: 20px;
+  font-weight: 700;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 40px;
+}
+
+.intro {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  text-align: center;
+  margin: auto;
+  height: 100vh;
+  max-width: 50vw;
+  background-repeat: no-repeat;
+}
+.bg {
+  display: flex;
+  background-image: url("assets/images/background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 160vw 100vh ;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.menu-btn {
+  height: 30px;
+  width: 30px;
+}
+
+.blue {
+  color: #172B4D;
+}
+.green {
+  color: #36B37E;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.social-btn {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  height: 30px;
+  width: 30px;
+}
+
+.twitter {
+  background-image: url("assets/images/twitter.png");
+}
+
+.github {
+  background-image: url("assets/images/github.png");
+}
+
+.linkedin {
+  background-image: url("assets/images/linkedin.png");
+}
+
+.medium {
+  background-image: url("assets/images/medium.png");
+}
+
+.angellist {
+  background-image: url("assets/images/angellist.png");
+}
+
+.down {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-image: url("assets/images/down.png");
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+}
