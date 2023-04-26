@@ -11,7 +11,7 @@
 h2 {
   display: flex;
   flex-direction: column;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 40px;
   margin: 0;
   padding-top: 20px;
@@ -21,7 +21,7 @@ h2 {
 p {
   display: flex;
   flex-direction: column;
-  font-family: 'Inter-Light';
+  font-family: 'Inter-Light', sans-serif;
   font-size: 20px;
   margin: 0;
   padding-top: 20px;
@@ -48,26 +48,28 @@ p {
   max-width: 50vw;
   background-repeat: no-repeat;
 }
+
 .bg {
   display: flex;
   background-image: url("assets/images/background.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 160vw 100vh ;
+  background-size: 160vw 100vh;
   flex-direction: column;
   justify-content: center;
-
 }
+
 .menu-btn {
   height: 30px;
   width: 30px;
 }
 
 .blue {
-  color: #172B4D;
+  color: #172b4d;
 }
+
 .green {
-  color: #36B37E;
+  color: #36b37e;
 }
 
 .social {
