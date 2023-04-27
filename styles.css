@@ -84,7 +84,7 @@ p {
 
 .social-btn {
   border: none;
-  color:#172b4d;
+  color: #172b4d;
   background-color: white;
   height: 30px;
   width: 30px;
@@ -112,7 +112,5 @@ ul {
 li {
   list-style: none;
   width: 30px;
-  height: 30px
+  height: 30px;
 }
-
-
