@@ -8,9 +8,11 @@
   src: url("assets/fonts/Inter-Light.ttf");
 }
 
-h2 {
+.heading {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  justify-content: center;
   font-family: 'Inter', sans-serif;
   font-size: 40px;
   margin: 0;
@@ -74,38 +76,18 @@ p {
 
 .social {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding: 20px;
 }
 
 .social-btn {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100% 100%;
+  border: none;
+  color:#172b4d;
+  background-color: white;
   height: 30px;
   width: 30px;
-}
-
-.twitter {
-  background-image: url("assets/images/twitter.png");
-}
-
-.github {
-  background-image: url("assets/images/github.png");
-}
-
-.linkedin {
-  background-image: url("assets/images/linkedin.png");
-}
-
-.medium {
-  background-image: url("assets/images/medium.png");
-}
-
-.angellist {
-  background-image: url("assets/images/angellist.png");
 }
 
 .down {
@@ -119,3 +101,18 @@ p {
   width: 50px;
   height: 50px;
 }
+
+ul {
+  display: flex;
+  padding-left: 0;
+  width: 50vw;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+  width: 30px;
+  height: 30px
+}
+
+
