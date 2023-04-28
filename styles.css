@@ -161,25 +161,25 @@ li {
 }
 
 .card1 {
-  grid-column-start: 2 ;
+  grid-column-start: 2;
   grid-row-start: 3;
   grid-row-end: 4;
 }
 
 .card2 {
-  grid-column-start: 2 ;
+  grid-column-start: 2;
   grid-row-start: 4;
   grid-row-end: 5;
 }
 
 .card3 {
-  grid-column-start: 2 ;
+  grid-column-start: 2;
   grid-row-start: 5;
   grid-row-end: 6;
 }
 
 .card4 {
-  grid-column-start: 2 ;
+  grid-column-start: 2;
   grid-row-start: 6;
   grid-row-end: 7;
 }
@@ -192,8 +192,7 @@ li {
   align-items: center;
   background-color: white;
   border: 1px solid #d0d9d4;
-
-  padding: 0px;
+  padding: 0;
 }
 
 #works-title {
@@ -234,7 +233,7 @@ li {
   font-size: 17px;
   font-weight: 700;
   align-items: center;
-  margin-top: 0px;
+  margin-top: 0;
   padding-right: 12px;
   padding-left: 12px;
 }
@@ -245,13 +244,12 @@ li {
   justify-content: space-between;
   width: 100%;
   margin-bottom: 37px;
-
 }
 
 .language {
   text-align: center;
   align-items: center;
-  padding: 10px 12px 0px 8px;
+  padding: 10px 12px 0 8px;
   background-color: #ebf0ee;
   height: 32px;
   font-family: 'Inter', sans-serif;
@@ -305,7 +303,6 @@ li {
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
-  text-align: center;
   margin-top: 90px;
 }
 
@@ -390,7 +387,7 @@ li {
   grid-row-end: 2;
   grid-column-start: 2;
   grid-column-end: 3;
-  margin: 0px;
+  margin: 0;
 }
 
 #frameworks {
@@ -398,7 +395,7 @@ li {
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 3;
-  margin: 0px;
+  margin: 0;
 }
 
 #skill {
@@ -406,7 +403,7 @@ li {
   grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 3;
-  margin: 0px;
+  margin: 0;
 }
 
 .skill-lang {
@@ -420,7 +417,7 @@ li {
 .skill-item {
   text-align: center;
   align-items: center;
-  padding: 10px 12px 0px 8px;
+  padding: 10px 12px 0 8px;
   background-color: white;
   height: 32px;
   font-family: 'Inter', sans-serif;
