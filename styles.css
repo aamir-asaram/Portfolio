@@ -247,7 +247,7 @@ li {
 
 .card-button:hover {
   cursor: pointer;
-  box-shadow: 0px 8px 16px 0px #36b37f3d;
+  box-shadow: 0 8px 16px 0 #36b37f3d;
 }
 
 .card-button:active {
@@ -256,7 +256,7 @@ li {
 
 .down:hover {
   cursor: pointer;
-  box-shadow: 0px 8px 16px 0px #36b37f3d;
+  box-shadow: 0 8px 16px 0 #36b37f3d;
 }
 
 .languages {
