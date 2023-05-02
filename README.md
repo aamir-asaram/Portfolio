@@ -104,14 +104,12 @@ Not yet implemented.
 👤 **Robert Migot**
 
 - GitHub: [@migo1](https://github.com/migo1)
-- Twitter: [@aaaaamir_](https://twitter.com/aaaaamir_)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/aamir-asaram-089802213/)
+- Twitter: [@art49554392](https://twitter.com/ert49554392)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/robert-m-3b3b1116a/)
 
 👤 **Ayomide Sunday**
 
 - GitHub: [@Paulinelali](https://github.com/Paulinelali)
-- Twitter: [@aaaaamir_](https://twitter.com/aaaaamir_)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/aamir-asaram-089802213/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -138,7 +136,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project...
+If you like this project please leave a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

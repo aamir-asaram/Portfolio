@@ -27,14 +27,17 @@
 }
 
 .intro {
+  margin: 0;
+  line-height: 28px;
+}
+
+.med {
   font-family: 'Inter-Light', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
   align-self: center;
   text-align: center;
-  font-size: 20px;
-  margin: 0;
   width: 80vw;
-  line-height: 28px;
-  font-weight: 400;
 }
 
 .header {
@@ -80,7 +83,7 @@
   justify-content: space-between;
   padding-top: 10px;
   width: 300px;
-  margin-left: 50px;
+  align-self: center;
 }
 
 .social-btn {
@@ -88,6 +91,10 @@
   background-color: white;
   height: 30px;
   width: 30px;
+}
+
+.social-btn:hover {
+  cursor: pointer;
 }
 
 .down {
@@ -238,6 +245,20 @@ li {
   padding-left: 12px;
 }
 
+.card-button:hover {
+  cursor: pointer;
+  box-shadow: 0px 8px 16px 0px #36b37f3d;
+}
+
+.card-button:active {
+  background-color: #008552;
+}
+
+.down:hover {
+  cursor: pointer;
+  box-shadow: 0px 8px 16px 0px #36b37f3d;
+}
+
 .languages {
   display: flex;
   flex-direction: row;
@@ -319,6 +340,7 @@ li {
   row-gap: 24px;
   width: 90vw;
   padding: 0;
+  height: auto;
 }
 
 .skills-card {
@@ -400,4 +422,49 @@ li {
 
 .sk-items {
   width: 80%;
+}
+
+.contact {
+  background-image: url('assets/images/illustration-contact-form.png');
+  background-repeat: no-repeat;
+  background-position: 100% 75%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 22px;
+}
+
+input {
+  border: 1px solid #d0d9d4;
+  align-self: center;
+  width: 327px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  border: 1px solid #60c095;
+  align-self: center;
+  width: 327px;
+  height: 114px;
+  margin-bottom: 10px;
+}
+
+#submit {
+  width: 129px;
+  margin-bottom: 26px;
+  margin-top: 20px;
+}
+
+#my-email {
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+
+#contact-social {
+  margin-bottom: 20px;
 }
