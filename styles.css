@@ -24,8 +24,13 @@
 
 .top {
   font-family: 'Inter', sans-serif;
-  font-size: 26px;
-  color: #172b4d;
+  font-size: 22px;
+  color: #42526e;
+  margin: 28px;
+}
+
+.top:hover {
+  color: black;
 }
 
 .a:link {
@@ -47,6 +52,7 @@
 .heading {
   display: flex;
   align-self: center;
+  font-size: 48px;
   justify-content: center;
   margin: 0;
   padding-bottom: 5px;
@@ -72,7 +78,7 @@
   font-weight: 400;
   align-self: center;
   text-align: center;
-  width: 80vw;
+  width: 60%;
 }
 
 .header {
@@ -90,6 +96,7 @@
 #top-menu {
   display: none;
   margin-top: 12px;
+  width: 100%;
 }
 
 .vis {
@@ -104,6 +111,10 @@
 
   .hide-desktop {
     display: none;
+  }
+
+  .form {
+    width: 47vw;
   }
 }
 
@@ -151,6 +162,14 @@
 
 .social-btn:hover {
   cursor: pointer;
+}
+
+.fa {
+  color: #505f79;
+}
+
+.fa:hover {
+  color: black;
 }
 
 .down {
@@ -222,7 +241,6 @@ li {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  height: 222px;
   align-items: center;
   background-color: white;
   border: 1px solid #d0d9d4;
@@ -261,6 +279,7 @@ li {
   margin-top: 0;
   padding-right: 12px;
   padding-left: 12px;
+  margin-bottom: 24px;
 }
 
 .card-button:hover {
@@ -281,7 +300,7 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 327px;
   margin-bottom: 37px;
 }
 
@@ -290,6 +309,7 @@ li {
   align-items: center;
   padding: 10px 12px 0 8px;
   background-color: #ebf0ee;
+  color: #172b4d;
   height: 32px;
   font-family: 'Inter', sans-serif;
   font-size: 12px;
@@ -323,6 +343,7 @@ li {
 #about-title {
   text-align: center;
   margin: 0;
+  color: #172b4d;
 }
 
 #about-content {
@@ -333,6 +354,7 @@ li {
   line-height: 32px;
   width: 50vw;
   margin: 0;
+  color: #42526e;
 }
 
 #about-img-1 {
@@ -434,7 +456,7 @@ li {
   justify-content: center;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   .contact {
     background-image:
       url('assets/images/illustration-contact-form.png'),
@@ -442,6 +464,7 @@ li {
       url('assets/images/illustration-2-contact-form-desktop@2x.png');
     background-repeat: no-repeat;
     background-position: 100% 75%, 0% 95%, 25% 100%;
+    background-size: auto, auto, 130px 105px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -449,14 +472,19 @@ li {
   }
 
   #get-in-touch {
-    width: 45%;
+    width: 32%;
+    margin-bottom: 30px;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   #get-in-touch {
     flex-shrink: 2;
     width: 75%;
+  }
+
+  .head {
+    align-self: flex-end;
   }
 
   .hide-mobile {
@@ -471,17 +499,17 @@ li {
   padding: 0;
   margin-top: 22px;
   flex-grow: 23;
-  width: 100%;
 }
 
 #names {
   display: flex;
   justify-content: space-between;
-  width: 87%;
+  width: 83%;
 }
 
 .names-input {
   width: 50%;
+  font-style: italic;
 }
 
 input {
@@ -489,6 +517,8 @@ input {
   width: 80%;
   height: 48px;
   margin: 12px;
+  border: 1px solid #d0d9d4;
+  font-style: italic;
 }
 
 textarea {
@@ -503,6 +533,8 @@ textarea {
   width: 129px;
   margin-bottom: 26px;
   margin-top: 20px;
+  align-self: center;
+  font-style: normal;
 }
 
 #my-email {
