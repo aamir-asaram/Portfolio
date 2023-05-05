@@ -518,7 +518,13 @@ textarea {
   width: 129px;
   margin-bottom: 26px;
   margin-top: 20px;
+  transition: width 2s;
 }
+
+#submit:hover{
+  width: 145px;
+}
+
 /* comment */
 #my-email {
   line-height: 32px;
