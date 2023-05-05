@@ -59,7 +59,19 @@
   line-height: 52px;
   font-weight: 700;
   justify-self: center;
+  animation: left-to-right 3s ease-in ;
 }
+
+@keyframes left-to-right {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 
 .intro {
   margin: 0;
