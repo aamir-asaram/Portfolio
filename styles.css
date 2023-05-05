@@ -8,7 +8,6 @@
   src: url("assets/fonts/Inter-Light.ttf");
 }
 
-
 .container {
   display: flex;
   flex-direction: column;
@@ -59,7 +58,6 @@
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
-  /* width: 72vw; */
   justify-self: center;
 }
 
@@ -104,9 +102,9 @@
     align-items: center;
   }
 
- .hide-desktop {
-  display: none;
- }
+  .hide-desktop {
+    display: none;
+  }
 }
 
 .bg {
@@ -438,9 +436,10 @@ li {
 
 @media only screen and (min-width: 767px) {
   .contact {
-    background-image: url('assets/images/illustration-contact-form.png'),
-    url('assets/images/illustration-1-contact-form-desktop.png'),
-    url('assets/images/illustration-2-contact-form-desktop@2x.png');
+    background-image:
+      url('assets/images/illustration-contact-form.png'),
+      url('assets/images/illustration-1-contact-form-desktop.png'),
+      url('assets/images/illustration-2-contact-form-desktop@2x.png');
     background-repeat: no-repeat;
     background-position: 100% 75%, 0% 95%, 25% 100%;
     display: flex;
@@ -454,7 +453,6 @@ li {
   }
 }
 
-
 @media only screen and (max-width: 767px) {
   #get-in-touch {
     flex-shrink: 2;
@@ -466,7 +464,6 @@ li {
   }
 }
 
-
 .form {
   display: flex;
   flex-direction: column;
@@ -476,8 +473,6 @@ li {
   flex-grow: 23;
   width: 100%;
 }
-
-
 
 #names {
   display: flex;
