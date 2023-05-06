@@ -120,6 +120,10 @@ a {
   .form {
     width: 47vw;
   }
+
+  #submit {
+    margin-right: 65%;
+  }
 }
 
 .bg {
@@ -478,7 +482,38 @@ li {
   #get-in-touch {
     width: 32%;
     margin-bottom: 30px;
+    margin-right: 30px;
   }
+}
+
+input {
+  align-self: flex-start;
+  width: 80%;
+  height: 48px;
+  margin: 12px;
+  border: 1px solid #d0d9d4;
+  font-style: italic;
+}
+
+textarea {
+  border: 1px solid #60c095;
+  align-self: flex-start;
+  width: 80%;
+  height: 114px;
+  margin: 12px;
+}
+
+#submit {
+  width: 129px;
+  margin-bottom: 26px;
+  margin-top: 20px;
+  align-self: flex-start;
+  font-style: normal;
+}
+
+#contact-social {
+  margin-bottom: 40px;
+  margin-top: 264px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -489,17 +524,40 @@ li {
 
   .head {
     align-self: flex-end;
+    margin-right: 32px;
   }
 
   .hide-mobile {
     display: none;
+    padding: 0;
+    margin: 0;
+  }
+  .form {
+    align-items: center;
+  }
+
+  input {
+    align-self: center;
+  }
+
+  textarea {
+    align-self: center;
+  }
+
+  #submit {
+    align-self: center;
+  }
+
+  #contact-social {
+    margin-bottom: 40px;
+    margin-top: 0;
   }
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding: 0;
   margin-top: 22px;
   flex-grow: 23;
@@ -516,36 +574,11 @@ li {
   font-style: italic;
 }
 
-input {
-  align-self: center;
-  width: 80%;
-  height: 48px;
-  margin: 12px;
-  border: 1px solid #d0d9d4;
-  font-style: italic;
-}
 
-textarea {
-  border: 1px solid #60c095;
-  align-self: center;
-  width: 80%;
-  height: 114px;
-  margin: 12px;
-}
-
-#submit {
-  width: 129px;
-  margin-bottom: 26px;
-  margin-top: 20px;
-  align-self: center;
-  font-style: normal;
-}
 
 #my-email {
   line-height: 32px;
   margin-bottom: 16px;
 }
 
-#contact-social {
-  margin-bottom: 40px;
-}
+
