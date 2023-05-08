@@ -49,7 +49,7 @@ CSS
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Not yet implemented.
+<a href="https://aamir-asaram.github.io/Portfolio/">Live Demo</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
