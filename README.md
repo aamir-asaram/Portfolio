@@ -9,6 +9,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [Walkthrough Video](#walkthrough)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -44,6 +45,10 @@ CSS
 - **Responsive layout allows for viewing on different devices**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+##Walkthrough <a name="walkthrough"></a>
+
+- Link to <a href="https://www.loom.com/share/3dbc337d4e2341618991c80f29b6a3f7">loom</a> video walkthrough.
 
 <!-- LIVE DEMO -->
 
