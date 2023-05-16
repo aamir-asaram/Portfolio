@@ -1,10 +1,10 @@
-let menu = document.querySelector('.head');
+const menu = document.querySelector('.head');
 
 function toggleMenu() {
-  let intro = document.querySelector('#menu');
-  let menu = document.querySelector('.menu-btn');
+  const intro = document.querySelector('#menu');
+  const menu = document.querySelector('.menu-btn');
   menu.classList.toggle('hide');
-  intro.classList.toggle('hide')
+  intro.classList.toggle('hide');
 }
 
 menu.addEventListener('click', toggleMenu);
