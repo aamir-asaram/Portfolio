@@ -116,6 +116,12 @@ Not yet implemented.
 
 - GitHub: [@Paulinelali](https://github.com/Paulinelali)
 
+👤 **Evans Nyamekye**
+
+- GitHub: [@evansnyamekye](https://github.com/evansnyamekye)
+- Twitter: [@nyamekye2131](https://twitter.com/nyamekye2131)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/evans-kofi-nyamekye-1980a4117/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -8,6 +8,72 @@
   src: url("assets/fonts/Inter-Light.ttf");
 }
 
+.hide {
+  display: none;
+}
+
+.close-btn {
+  height: 12px;
+  width: 12px;
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin-left: 90%;
+  margin-top: 10%;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding-left: 0;
+  width: 60vw;
+  height: 30px;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#menu {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  position: fixed;
+  overflow-y: hidden;
+  top: 0;
+  left: 0;
+}
+
+#menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  margin-top: 10%;
+  padding-left: 28px;
+  height: 100%;
+}
+
+#menu ul li {
+  list-style: none;
+  align-self: flex-start;
+  margin-left: 28px;
+  margin-bottom: 40px;
+}
+
+#menu ul li a {
+  font-size: 32px;
+  color: #3a4a42;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -31,10 +97,6 @@
 
 .top:hover {
   color: black;
-}
-
-a {
-  text-decoration: none;
 }
 
 .a:link {
@@ -139,8 +201,8 @@ a {
 }
 
 .menu-btn {
-  height: 30px;
-  width: 30px;
+  height: 16px;
+  width: 16px;
 }
 
 .blue {
@@ -200,21 +262,6 @@ section {
   justify-self: center;
   width: 100vw;
   padding-top: 10%;
-}
-
-ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 0;
-  padding-left: 0;
-  width: 60vw;
-  height: 30px;
-  flex-wrap: wrap;
-}
-
-li {
-  list-style: none;
 }
 
 #break {

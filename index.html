@@ -10,8 +10,18 @@
 </head>
 <body class="container">
   <header class="head">
+    <div id="menu" class="hide hide-desktop">
+      <img src="assets/images/Icon.png" class="close-btn">
+      <ul>
+        <li><a href="#works" class="top">Works</a></li>
+        <li><a href="#about" class="top">About</a></li>
+        <li><a href="#contact" class="top">Contact</a></li>
+      </ul>
+    </div>
     <nav class="header hide-desktop">
-      <img src="assets/images/menu.png" class="menu-btn"">
+      <img src="assets/images/menu.png" class="menu-btn">
+      <!-- <img src="assets/images/Icon.png" class="close-btn hide> -->
+      <script src="script.js"></script>
     </nav>
     <ul media="screen and (max-device-width: 767px)" id="top-menu">
       <li><a href="#works" class="top">Works</a></li>
@@ -164,7 +174,7 @@
   </ul>
 
   <!-- contact section -->
-  <section class="contact">
+  <section class="contact" id="contact">
     <h2 class="blue subheading heading" id="get-in-touch">I'm always interested in hearing about new projects,
     so if you'd like to chat please get in touch.</h2>
     <div class="hide-desktop">
