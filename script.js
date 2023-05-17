@@ -11,32 +11,50 @@ menu.addEventListener('click', toggleMenu);
 
 const defaultTitle = 'Multi-Post Stories Gain + Glory';
 // const defaultImg = 'assets/images/card.jpeg';
-const defaultTech = ['Ruby on Rails', 'CSS', 'HTML', 'JavaScript']
+const defaultTech = ['Ruby on Rails', 'CSS', 'HTML', 'JavaScript'];
 
 const works = [
-  {title: defaultTitle, img: '', technologies: defaultTech ,
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-  source: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', live: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'},
-  {title: defaultTitle, img: '', technologies: defaultTech,
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-  source: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', live: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'},
-  {title: 'defaultTitle', img: '', technologies: ['Python', 'CSS', 'HTML', 'JavaScript'],
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-  source: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', live: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'},
-  {title: defaultTitle, img: '', technologies: defaultTech,
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-  source: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', live: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'}
-]
+  {
+    title: defaultTitle,
+    img: '',
+    technologies: defaultTech,
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    source: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    live: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+  },
+  {
+    title: defaultTitle,
+    img: '',
+    technologies: defaultTech,
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    source: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    live: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+  },
+  {
+    title: 'defaultTitle',
+    img: '',
+    technologies: ['Python', 'CSS', 'HTML', 'JavaScript'],
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    source: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    live: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'},
+  {
+    title: defaultTitle,
+    img: '',
+    technologies: defaultTech,
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    source: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    live: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+  },
+];
 
-let count = 1;
-for (const work in works) {
+for (let work = 0; work < works.length; work++) {
   const workSection = document.getElementById('works');
   const div = document.createElement('div');
   div.classList.add('work');
   div.classList.add('card');
   const imageDiv = document.createElement('div');
   imageDiv.className = 'card-img';
-  const img = document.createElement('img')
+  const img = document.createElement('img');
   img.src = works[work].img;
   div.appendChild(imageDiv);
   imageDiv.appendChild(img);
@@ -51,15 +69,15 @@ for (const work in works) {
   const tech = works[work].technologies;
   const languages = document.createElement('ul');
   languages.className = 'languages';
-  for (const i in tech) {
-    let lang = document.createElement('li');
+  for (let i = 0; i < tech.length; i++) {
+    const lang = document.createElement('li');
     lang.textContent = tech[i];
     lang.className = 'language';
     languages.appendChild(lang);
   }
   content.appendChild(languages);
 
-  let x = document.createElement('a');
+  const x = document.createElement('a');
   // x.addEventListener('click', createPopup(work)); //add function to make popup
   const button = document.createElement('button');
   button.className = 'card-button';
@@ -67,7 +85,7 @@ for (const work in works) {
   x.appendChild(button);
   content.appendChild(x);
 
-  x.setAttribute("onclick", `createPopup(${work})`);
+  x.setAttribute('onclick' `createPopup(${work})`);
 
   workSection.appendChild(div);
 }
@@ -82,12 +100,11 @@ let globalID = 99;
 const bg = document.createElement('div');
 bg.className = 'popup-bg';
 
-//create popup
 function createPopup(id) {
   globalID = id;
   card = document.createElement('div');
   bg.appendChild(card);
-  let project = works[id];
+  const project = works[id];
   card.classList.add('popup');
   if (window.innerWidth > 768) {
     card.classList.add('popup-desktop');
@@ -95,7 +112,7 @@ function createPopup(id) {
 
   card.classList.add('hide-desktop');
   card.id = 'popup-card';
-  card.style.display = "flex";
+  card.style.display = 'flex';
   document.body.appendChild(bg);
 
   const closeButton = document.createElement('img');
@@ -105,7 +122,7 @@ function createPopup(id) {
   } else {
     closeButton.className = 'closePopup';
   }
-  closeButton.setAttribute("onclick", `closePopup()`);
+  closeButton.setAttribute('onclick', 'closePopup()');
   card.appendChild(closeButton);
 
   const img = document.createElement('img');
@@ -117,9 +134,8 @@ function createPopup(id) {
   }
   card.appendChild(img);
 
-  let title = document.createElement('h3');
+  const title = document.createElement('h3');
   title.textContent = project.title;
-
 
   const titleDesktop = document.createElement('div');
   if (window.innerWidth > 768) {
@@ -140,8 +156,8 @@ function createPopup(id) {
   } else {
     languages.classList.add('popupLang');
   }
-  for (const i in tech) {
-    let lang = document.createElement('li');
+  for (let i = 0; i < tech.length;  i++) {
+    const lang = document.createElement('li');
     lang.textContent = tech[i];
     lang.classList.add('language');
     lang.classList.add('popupTech');
@@ -182,15 +198,10 @@ function createPopup(id) {
     card.appendChild(buttonDiv);
   }
 
-  if (window.innerWidth > 768) {
-    console.log("desktop");
-    document.removeChild(card)
-  }
 }
 
-
-window.addEventListener('resize', function(event){
+window.addEventListener('resize', function() {
   bg.removeChild(card);
-  document.body.removeChild(bg)
+  document.body.removeChild(bg);
   createPopup(globalID);
 });
