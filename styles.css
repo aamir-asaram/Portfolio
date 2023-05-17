@@ -304,6 +304,7 @@ section {
   line-height: 32px;
   font-weight: 600;
   text-align: center;
+  color: #172b4d;
   width: 85%;
   justify-self: center;
   margin-top: 16px;
@@ -438,6 +439,7 @@ section {
   font-family: 'Inter', sans-serif;
   font-size: 32px;
   margin-left: 16px;
+  color: #172b4d;
 }
 
 .popupTitleDesktop {
@@ -449,6 +451,7 @@ section {
   text-align: left;
   font-family: 'Inter', sans-serif;
   font-size: 32px;
+  color: #172b4d;
   margin-left: 19px;
   margin-top: 16px;
   width: 64%;
