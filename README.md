@@ -9,6 +9,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [Walkthrough Video](#walkthrough)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -45,11 +46,15 @@ CSS
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+##Walkthrough <a name="walkthrough"></a>
+
+- Link to <a href="https://www.loom.com/share/3dbc337d4e2341618991c80f29b6a3f7">loom</a> video walkthrough.
+
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Not yet implemented.
+<a href="https://aamir-asaram.github.io/Portfolio/">Live Demo</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -110,6 +115,12 @@ Not yet implemented.
 👤 **Ayomide Sunday**
 
 - GitHub: [@Paulinelali](https://github.com/Paulinelali)
+
+👤 **Evans Nyamekye**
+
+- GitHub: [@evansnyamekye](https://github.com/evansnyamekye)
+- Twitter: [@nyamekye2131](https://twitter.com/nyamekye2131)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/evans-kofi-nyamekye-1980a4117/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
