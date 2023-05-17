@@ -203,7 +203,7 @@ function createPopup(id) {
   }
 }
 
-window.addEventListener('resize', removeCard = () => {
+window.addEventListener('resize', () => {
   bg.removeChild(card);
   document.body.removeChild(bg);
   createPopup(globalID);

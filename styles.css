@@ -494,8 +494,9 @@ section {
 .popupButtons {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 90%;
+  margin-left: 12px;
 }
 
 .popupBtn {
