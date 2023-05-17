@@ -91,6 +91,11 @@ for (let work = 0; work < works.length; work += 1) {
   workSection.appendChild(div);
 }
 
+function closePopup() {
+  const div = document.querySelector('.popup-bg');
+  div.remove();
+}
+
 let card = null;
 let globalID = 99;
 const bg = document.createElement('div');
@@ -118,10 +123,7 @@ function createPopup(id) {
   } else {
     closeButton.className = 'closePopup';
   }
-  closeButton.setAttribute('onclick', () => {
-    const div = document.querySelector('.popup-bg');
-    div.remove();
-  });
+  closeButton.setAttribute('onclick', closePopup());
   card.appendChild(closeButton);
 
   const img = document.createElement('img');
