@@ -374,7 +374,7 @@ section {
   left: 0;
   width: 100vw;
   height: 100%;
-  /* background-color: rgba(193, 199, 208, 0.9); */
+  background-color: rgba(193, 199, 208, 0.9); 
 }
 
 .popup {
@@ -443,7 +443,6 @@ section {
 .popupTitleDesktop {
   display: flex;
   width: 95%;
-  border: 10px solid salmon;
 }
 
 .popupTitleDesk {
@@ -453,7 +452,6 @@ section {
   margin-left: 16px;
   margin-top: 16px;
   width: 64%;
-  border: 10px solid palegreen;
 }
 
 .popupLang {
@@ -498,7 +496,6 @@ section {
   flex-direction: row;
   justify-content: space-around;
   width: 90%;
-  border: 10px solid blueviolet;
 }
 
 .btn-icon {
