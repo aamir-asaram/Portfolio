@@ -93,7 +93,9 @@ for (let work = 0; work < works.length; work += 1) {
 
 function closePopup() {
   const div = document.querySelector('.popup-bg');
-  div.remove();
+  if (div !== null) {
+    div.remove();
+  }
 }
 
 let card = null;
@@ -103,6 +105,7 @@ bg.className = 'popup-bg';
 
 function createPopup(id) {
   globalID = id;
+  closePopup();
   card = document.createElement('div');
   bg.appendChild(card);
   const project = works[id];
@@ -123,7 +126,7 @@ function createPopup(id) {
   } else {
     closeButton.className = 'closePopup';
   }
-  closeButton.setAttribute('onclick', closePopup());
+  closeButton.setAttribute('onclick', 'closePopup()');
   card.appendChild(closeButton);
 
   const img = document.createElement('img');
@@ -200,7 +203,7 @@ function createPopup(id) {
   }
 }
 
-window.addEventListener('resize', () => {
+window.addEventListener('resize', removeCard = () => {
   bg.removeChild(card);
   document.body.removeChild(bg);
   createPopup(globalID);
