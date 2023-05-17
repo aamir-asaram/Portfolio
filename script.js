@@ -20,7 +20,7 @@ const works = [
     technologies: defaultTech,
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     source: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    live: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+    live: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
     title: defaultTitle,
@@ -28,7 +28,7 @@ const works = [
     technologies: defaultTech,
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     source: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    live: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+    live: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
     title: 'defaultTitle',
@@ -36,18 +36,19 @@ const works = [
     technologies: ['Python', 'CSS', 'HTML', 'JavaScript'],
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     source: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    live: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'},
+    live: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  },
   {
     title: defaultTitle,
     img: '',
     technologies: defaultTech,
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     source: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    live: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+    live: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
 ];
 
-for (let work = 0; work < works.length; work++) {
+for (let work = 0; work < works.length; work += 1) {
   const workSection = document.getElementById('works');
   const div = document.createElement('div');
   div.classList.add('work');
@@ -69,7 +70,7 @@ for (let work = 0; work < works.length; work++) {
   const tech = works[work].technologies;
   const languages = document.createElement('ul');
   languages.className = 'languages';
-  for (let i = 0; i < tech.length; i++) {
+  for (let i = 0; i < tech.length; i += 1) {
     const lang = document.createElement('li');
     lang.textContent = tech[i];
     lang.className = 'language';
@@ -85,7 +86,7 @@ for (let work = 0; work < works.length; work++) {
   x.appendChild(button);
   content.appendChild(x);
 
-  x.setAttribute('onclick' `createPopup(${work})`);
+  x.setAttribute('onclick', `createPopup(${work})`);
 
   workSection.appendChild(div);
 }
@@ -156,7 +157,7 @@ function createPopup(id) {
   } else {
     languages.classList.add('popupLang');
   }
-  for (let i = 0; i < tech.length;  i++) {
+  for (let i = 0; i < tech.length; i += 1) {
     const lang = document.createElement('li');
     lang.textContent = tech[i];
     lang.classList.add('language');
@@ -197,10 +198,9 @@ function createPopup(id) {
   } else {
     card.appendChild(buttonDiv);
   }
-
 }
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', removeCard = () => {
   bg.removeChild(card);
   document.body.removeChild(bg);
   createPopup(globalID);
