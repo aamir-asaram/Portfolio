@@ -91,11 +91,6 @@ for (let work = 0; work < works.length; work += 1) {
   workSection.appendChild(div);
 }
 
-function closePopup() {
-  const div = document.querySelector('.popup-bg');
-  div.remove();
-}
-
 let card = null;
 let globalID = 99;
 const bg = document.createElement('div');
@@ -123,7 +118,10 @@ function createPopup(id) {
   } else {
     closeButton.className = 'closePopup';
   }
-  closeButton.setAttribute('onclick', 'closePopup()');
+  closeButton.setAttribute('onclick', () => {
+    const div = document.querySelector('.popup-bg');
+    div.remove();
+  });
   card.appendChild(closeButton);
 
   const img = document.createElement('img');
@@ -200,7 +198,7 @@ function createPopup(id) {
   }
 }
 
-window.addEventListener('resize', removeCard = () => {
+window.addEventListener('resize', () => {
   bg.removeChild(card);
   document.body.removeChild(bg);
   createPopup(globalID);
