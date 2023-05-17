@@ -159,12 +159,20 @@ function createPopup(id) {
   card.appendChild(info);
 
   const buttonDiv = document.createElement('div');
-  buttonDiv.className = 'popupButtons';
+  if (window.innerWidth > 768) {
+    buttonDiv.className = 'popupButtonsDesktop';
+  } else {
+    buttonDiv.className = 'popupButtons';
+  }
   let button = document.createElement('a');
+  button.className = 'popupBtn';
+  button.href = project.live;
   button.innerHTML = '<button class="card-button" >See live<img src="assets/images/live.png" class="btn-icon"></img></button>';
   button.id = 'about-btn';
   buttonDiv.appendChild(button);
   button = document.createElement('a');
+  button.className = 'popupBtn';
+  button.href = project.source;
   button.innerHTML = '<button class="card-button">See source <img src="assets/images/Vector.png" class="btn-icon"></img> </button>';
   button.id = 'about-btn';
   buttonDiv.appendChild(button);
