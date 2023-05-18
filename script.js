@@ -216,6 +216,26 @@ const emailRegex = /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
 const error = document.getElementById('error');
 error.className = 'error';
 
+// add local storage
+const nameInput = document.getElementById('name');
+const message = document.getElementById('message');
+
+form.addEventListener('input', () => {
+  const input = {
+    name: nameInput.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('input', JSON.stringify(input));
+});
+
+const existingInput = JSON.parse(localStorage.getItem('input'));
+if (existingInput) {
+  nameInput.value = existingInput.name;
+  email.value = existingInput.email;
+  message.value = existingInput.message;
+}
+
 window.addEventListener('load', () => {
   const isValid = email.value.length !== 0 || emailRegex.test(email.value);
   email.className = isValid ? 'valid' : 'invalid';
