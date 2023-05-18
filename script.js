@@ -230,7 +230,7 @@ email.addEventListener('input', () => {
   } else {
     email.className = 'invalid';
     if (email.value.toLowerCase() !== email.value) {
-      error.textContent = 'Email address should be lowercase, try ${email.value.toLowerCase()}';
+      error.textContent = `Email address should be lowercase, try ${email.value.toLowerCase()}`;
     } else {
       error.textContent = 'Please enter a valid email address';
     }
@@ -242,7 +242,7 @@ form.addEventListener('submit', (event) => {
   if (!isValid) {
     email.className = 'invalid';
     if (email.value.toLowerCase() !== email.value) {
-      error.textContent = 'Email address should be lowercase, try ' + email.value.toLowerCase();
+      error.textContent = `Email address should be lowercase, try ${email.value.toLowerCase()}`;
     } else {
       error.textContent = 'Please enter a valid email address';
     }
