@@ -208,3 +208,51 @@ window.addEventListener('resize', () => {
   document.body.removeChild(bg);
   createPopup(globalID);
 });
+
+// form validation
+const form = document.querySelector('.form');
+const email = document.getElementById('email');
+const emailRegex = /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+const error = document.getElementById('error');
+error.className = 'error';
+
+window.addEventListener('load', () => {
+  const isValid = email.value.length !== 0 || emailRegex.test(email.value);
+  email.className = isValid ? 'valid' : 'invalid';
+});
+
+email.addEventListener('input', () => {
+  const isValid = email.value.length !== 0 && emailRegex.test(email.value);
+  if (isValid) {
+    email.className = 'valid';
+    error.textContent = '';
+    error.className = 'error';
+  } else {
+    email.className = 'invalid';
+    if (email.value.toLowerCase() !== email.value) {
+      error.textContent = `Email address should be lowercase, try ${email.value.toLowerCase()}`;
+    } else {
+      error.textContent = 'Please enter a valid email address';
+    }
+  }
+});
+
+form.addEventListener('submit', (event) => {
+  const isValid = email.value.length !== 0 && emailRegex.test(email.value);
+  if (!isValid) {
+    email.className = 'invalid';
+    if (email.value.toLowerCase() !== email.value) {
+      error.textContent = `Email address should be lowercase, try ${email.value.toLowerCase()}`;
+    } else {
+      error.textContent = 'Please enter a valid email address';
+    }
+    event.preventDefault();
+
+    error.className = 'error active';
+  } else {
+    email.className = 'valid';
+    error.textContent = '';
+    error.className = 'error';
+    form.requestSubmit();
+  }
+});

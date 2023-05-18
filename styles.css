@@ -709,6 +709,20 @@ textarea {
   margin-top: 264px;
 }
 
+.error {
+  width: 80%;
+  padding: 0;
+  align-self: flex-start;
+  justify-self: center;
+  padding-left: 90px;
+  font-size: 80%;
+  color: #900;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+  font-family: 'Inter-light', sans-serif;
+  font-weight: 800;
+}
+
 @media only screen and (max-width: 768px) {
   #get-in-touch {
     flex-shrink: 2;
@@ -746,6 +760,10 @@ textarea {
     margin-bottom: 40px;
     margin-top: 0;
   }
+
+  .error {
+    margin-left: 12px;
+  }
 }
 
 .form {
@@ -766,6 +784,11 @@ textarea {
 .names-input {
   width: 50%;
   font-style: italic;
+}
+
+input.invalid {
+  border-color: #900;
+  background-color: #fdd;
 }
 
 #my-email {
