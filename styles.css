@@ -8,10 +8,6 @@
   src: url("assets/fonts/Inter-Light.ttf");
 }
 
-.hide {
-  display: none;
-}
-
 .close-btn {
   height: 12px;
   width: 12px;
@@ -308,6 +304,7 @@ section {
   line-height: 32px;
   font-weight: 600;
   text-align: center;
+  color: #172b4d;
   width: 85%;
   justify-self: center;
   margin-top: 16px;
@@ -370,6 +367,155 @@ section {
   font-size: 12px;
   font-weight: 600;
   line-height: 16px;
+}
+
+.popup-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(193, 199, 208, 0.9);
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+  height: 95vh;
+  width: 86%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.popup-desktop {
+  top: 50%;
+  height: 95%;
+  width: 63%;
+}
+
+.closePopup {
+  position: absolute;
+  left: 86%;
+  top: 36px;
+  width: 12px;
+  height: 12px;
+}
+
+.closePopupDesktop {
+  align-self: flex-end;
+  width: 12px;
+  height: 12px;
+  margin-right: 38px;
+  margin-top: 38px;
+}
+
+.popupImg {
+  margin-top: 16px;
+  left: 27px;
+  top: 16px;
+  width: 95%;
+  height: 220px;
+  align-self: center;
+}
+
+.popupImgDesktop {
+  margin-top: 16px;
+  left: 27px;
+  top: 16px;
+  width: 95%;
+  height: 56%;
+  align-self: center;
+}
+
+.popupTitle {
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  margin-left: 16px;
+  color: #172b4d;
+}
+
+.popupTitleDesktop {
+  display: flex;
+  width: 95%;
+}
+
+.popupTitleDesk {
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  color: #172b4d;
+  margin-left: 19px;
+  margin-top: 16px;
+  width: 64%;
+}
+
+.popupLang {
+  margin-top: -16px;
+  margin-left: 16px;
+  width: 311px;
+}
+
+.popupLangDesktop {
+  margin-top: -16px;
+  margin-left: 19px;
+  width: 311px;
+}
+
+.popupTech {
+  border-radius: 4px;
+  margin-bottom: 0;
+}
+
+.popupInfo {
+  font-family: 'Inter-Light', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #344563;
+  width: 85%;
+  margin-left: 16px;
+  margin-top: -16px;
+}
+
+.popupInfoDesktop {
+  font-family: 'Inter-Light', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #344563;
+  width: 85%;
+  margin-left: 19px;
+  margin-top: -16px;
+}
+
+.popupButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 90%;
+  margin-left: 12px;
+}
+
+.popupBtn {
+  margin-right: 12px;
+}
+
+.popupButtonsDesktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+}
+
+.btn-icon {
+  margin-left: 12px;
+  margin-top: 2px;
 }
 
 #left {
@@ -625,4 +771,8 @@ textarea {
 #my-email {
   line-height: 32px;
   margin-bottom: 16px;
+}
+
+.hide {
+  display: none;
 }
